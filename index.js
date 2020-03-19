@@ -39,10 +39,12 @@ app.use(express.json());
 app.post('/', function(request, res){
 	// response.send(request.body.user.color);
 	let color = request.body.user.color;
+	let text = request.body.user.text;
 	console.log('De gewenste kleur is: ' + color);
 
 	res.render('shirt', {
 		kleur: color,
+		text: text,
 	});	
 
 });

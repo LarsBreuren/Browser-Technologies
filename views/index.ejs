@@ -2,12 +2,42 @@
 
 
 <h1> Make your T-shirt! </h1>
+<section>
+    <form method="post" action="/">
+        <label for="text">Text</label>
+        <input type="text" name="user[text]" id="text" value="text" maxlength="10" required><br>
 
-<form method="post" action="/">
-    <label for="color">Color</label>
-    <input type="text" name="user[color]" id="color">
-    <input type="submit" value="Submit">
-</form>
+        <p> Color:</p>
+        <input type="radio" id="red" name="user[color]" value="red">
+        <label for="red">Red</label><br>
+        <input type="radio" id="blue" name="user[color]" value="blue">
+        <label for="blue">Blue</label><br>
+        <input type="radio" id="orange" name="user[color]" value="orange">
+        <label for="orange">Orange</label><br>
+        <input type="radio" id="green" name="user[color]" value="green">
+        <label for="green">Green</label><br><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="svg">
+        <svg width="300" height="300" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320.769 291.483"
+            style="enable-background:new 0 0 320.769 291.483;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill: grey;
+                    stroke: #000000;
+                    stroke-width: 2;
+                    stroke-miterlimit: 10;
+                }
+            </style>
+            <polygon id="XMLID_1_" class="st0" points="46.305,56.483 103.305,5.483 151.305,50.483 208.945,1.483 319.305,163.483 
+241.305,203.483 196.305,102.483 215.305,290.483 76.305,290.483 110.305,115.483 53.305,174.483 1.305,101.483 " />
+        </svg>
+        <p> Text </p>
+    </div>
+</section>
 
 
 <%- include('partials/footer') %>

@@ -4,7 +4,7 @@ body{
     background-color: grey;
     background-image :url("/img/bg.jpg");
     }
-h1{ color: #fff;}
+h1,h2{ color: #fff;}
 section{ 
     display: flex; justify-content: center;
     background-color: rgba( 0,0,0,0.7);

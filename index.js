@@ -1,6 +1,8 @@
 // Require third-party modules
 const express = require('express');
 const bodyParser = require("body-parser");
+const uniqid = require('uniqid');
+const fs = require('file-system');
 
 const port = process.env.PORT || 3000
 
@@ -40,11 +42,27 @@ app.post('/', function(request, res){
 	// response.send(request.body.user.color);
 	let color = request.body.user.color;
 	let text = request.body.user.text;
-	console.log('De gewenste kleur is: ' + color);
 
 	res.render('shirt', {
 		kleur: color,
 		text: text,
 	});	
 
+	let object = {id: uniqid(), color: request.body.user.color, text: request.body.user.text };
+	let shirtData = JSON.stringify(object);
+
+	fs.writeFile('shirts/shirts.json', shirtData, 'utf8', shirtData);
+
 });
+
+app.get('/read', function (request, res) {
+	fs.readFile('shirts/shirts.json', 'utf8', function readFileCallback(err, data){
+		if (err){
+			console.log(data);
+		} else {
+		obj = JSON.parse(data); //now it an object
+		json = JSON.stringify(obj); //convert it back to json
+		console.log(json);
+	}});
+});
+

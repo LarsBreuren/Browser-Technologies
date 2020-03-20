@@ -29,7 +29,7 @@ app.listen(port, function () {
 });
 
 // Parse URL-encoded bodies (as sent by HTML forms)
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }))
 
 // Use body parser
 app.use(bodyParser.json());
@@ -41,17 +41,19 @@ app.use(express.json());
 app.post('/', function(request, res){
     let color = request.body.user.color;
     let text = request.body.user.text;
+    let id = uniqid();
 
     res.render('shirt', {
         kleur: color,
         text: text,
+        shirtId : id,
     });    
 
     let object = {color: request.body.user.color, text: request.body.user.text };
 
     fs.readFile('shirts/shirts.json', function (err, data) { // read to edit
         let shirts = JSON.parse(data);
-        shirts[uniqid()] = object; // Add new design
+        shirts[id] = object; // Add new design
 
         fs.writeFile('shirts/shirts.json', JSON.stringify(shirts)); // write to json
     });
@@ -69,13 +71,13 @@ app.post('/read', function (request, res) {
 		let search_id = request.body.user.id;
 		
 		let color = shirts[search_id].color
-		let text = shirts[search_id].text
+        let text = shirts[search_id].text
 
         if(shirts.hasOwnProperty(search_id)){
 			console.log("Shirt bestaat!");
-			res.render('shirt', {
+			res.render('saved', {
 				kleur: color,
-				text: text,
+                text: text,
 			});   
 	
         }else{

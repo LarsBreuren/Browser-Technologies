@@ -39,7 +39,6 @@ app.use(express.json());
 
 // Access the parse results as request.body
 app.post('/', function(request, res){
-	// response.send(request.body.user.color);
 	let color = request.body.user.color;
 	let text = request.body.user.text;
 
@@ -48,10 +47,10 @@ app.post('/', function(request, res){
 		text: text,
 	});	
 
-	let object = {id: uniqid(), color: request.body.user.color, text: request.body.user.text };
-	let shirtData = JSON.stringify(object);
+	let object = {color: request.body.user.color, text: request.body.user.text };
+	let pushToJson = uniqid()+ " = " + JSON.stringify(object);;
 
-	fs.writeFile('shirts/shirts.json', shirtData, 'utf8', shirtData);
+	fs.appendFileSync("shirts/shirts.json", pushToJson, "UTF-8",{'flags': 'a+'}, " \n");
 
 });
 

@@ -39,18 +39,22 @@ app.use(express.json());
 
 // Access the parse results as request.body
 app.post('/', function(request, res){
-	let color = request.body.user.color;
-	let text = request.body.user.text;
+    let color = request.body.user.color;
+    let text = request.body.user.text;
 
-	res.render('shirt', {
-		kleur: color,
-		text: text,
-	});	
+    res.render('shirt', {
+        kleur: color,
+        text: text,
+    });    
 
-	let object = {color: request.body.user.color, text: request.body.user.text };
-	let pushToJson = uniqid()+ " = " + JSON.stringify(object);;
+    let object = {color: request.body.user.color, text: request.body.user.text };
 
-	fs.appendFileSync("shirts/shirts.json", pushToJson, "UTF-8",{'flags': 'a+'}, " \n");
+    fs.readFile('shirts/shirts.json', function (err, data) { // read to edit
+        let shirts = JSON.parse(data);
+        shirts["id-" + uniqid()] = object; // Add new design
+
+        fs.writeFile('shirts/shirts.json', JSON.stringify(shirts)); // write to json
+    });
 
 });
 

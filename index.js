@@ -51,21 +51,35 @@ app.post('/', function(request, res){
 
     fs.readFile('shirts/shirts.json', function (err, data) { // read to edit
         let shirts = JSON.parse(data);
-        shirts["id-" + uniqid()] = object; // Add new design
+        shirts[uniqid()] = object; // Add new design
 
         fs.writeFile('shirts/shirts.json', JSON.stringify(shirts)); // write to json
     });
 
 });
 
-app.get('/read', function (request, res) {
-	fs.readFile('shirts/shirts.json', 'utf8', function readFileCallback(err, data){
-		if (err){
-			console.log(data);
-		} else {
-		obj = JSON.parse(data); //now it an object
-		json = JSON.stringify(obj); //convert it back to json
-		console.log(json);
-	}});
-});
+app.post('/read', function (request, res) {
+    fs.readFile('shirts/shirts.json', 'utf8', function readFileCallback(err, data){
+        if (err){
+           console.log("error?");
+           return;
+        }
+        console.log(request);
+        let shirts = JSON.parse(data);
+		let search_id = request.body.user.id;
+		
+		let color = shirts[search_id].color
+		let text = shirts[search_id].text
 
+        if(shirts.hasOwnProperty(search_id)){
+			console.log("Shirt bestaat!");
+			res.render('shirt', {
+				kleur: color,
+				text: text,
+			});   
+	
+        }else{
+            console.log("Shirt niet gevonden!");
+        }
+    });
+});

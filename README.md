@@ -10,8 +10,7 @@ My accessible website
 een formulier. Wellicht een suggestie hiervoor?
 
 # Opbouw code
--NodeJS
--EJS
+Ik heb NodeJS en EJS gebruikt.
 Je land op de edit pagina, hier kan je met een formulier data versturen om het shirt aan de rechterzijde te bewerken.
 Zodra je op submit klikt gaat de data naar de server, die zet de waardes in een nieuwe EJS file die vervolgens server side gerenderd wordt.
 Ook wordt deze data doormiddel van de npm package file system naar een .json file geschreven om later weer gebruikt te worden.

@@ -7,7 +7,7 @@ My accessible website
 - Opbouw code, goed? Kan het beter?
 - Flexbox werkt op IE, goede keuze?
 - In de json files staan nu id objects die data over een shirt bevatten. Ik ben er nog niet helemaal achter hoe ik dit weer kan ophalen via
-een formulier. Wellicht een suggestie hiervoor?
+een formulier. Wellicht een suggestie hiervoor? -- Dit is nu gefixed, wellicht feedback op hoe dit opgelost is ( in shirts.json opgeslagen).
 
 # Opbouw code
 Ik heb NodeJS en EJS gebruikt.

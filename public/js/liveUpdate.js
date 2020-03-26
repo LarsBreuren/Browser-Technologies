@@ -1,4 +1,4 @@
-const input = document.querySelector('input');
+const input = document.getElementById('text');
 const log = document.getElementById('shirtText');
 
 input.addEventListener('input', updateValue);

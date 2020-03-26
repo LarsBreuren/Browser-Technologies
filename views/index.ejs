@@ -5,9 +5,11 @@
 <section>
     <form method="post" action="/">
         <label for="text">Text</label>
-        <input type="text" id="textInput"name="user[text]" id="text" value="Awesome quote" maxlength="13" required><br>
+        <input type="text" id="text"name="user[text]" id="text" value="Awesome quote" maxlength="13" required><br>
 
         <p> Color:</p>
+        <input type="radio" id="purple" name="user[color]" value="purple" checked>
+        <label for="purple">Purple</label><br>
         <input type="radio" id="red" name="user[color]" value="red">
         <label for="red">Red</label><br>
         <input type="radio" id="blue" name="user[color]" value="blue">

@@ -1,20 +1,46 @@
 <%- include('partials/head') %>
 
 
-<h1> Your <%=kleur %> T-shirt! </h1>
+<h1> Edit your <%=kleur %> T-shirt! </h1>
 <section>
-  <form method="post" action="/">
+  <form method="post" action="/edit">
+
+    <label for="text">ID</label>
+    <input type="text" name="user[id]" id="id" value="<%= id %>" maxlength="10" required><br><br>
+
     <label for="text">Text</label>
-    <input type="text" name="user[text]" id="text" value="text" maxlength="10" required><br>
+    <input type="text" name="user[text]" id="text" value="<%= text%>" maxlength="13" required><br>
 
     <p> Color:</p>
-    <input type="radio" id="red" name="user[color]" value="red">
+    <input type="radio" id="purple" name="user[color]" value="purple"
+    <% if (kleur== "purple") { %>
+      checked 
+     <% } %>
+     >
+    <label for="purple">Purple</label><br>
+    <input type="radio" id="red" name="user[color]" value="red"   
+    <% if (kleur== "red") { %>
+      checked 
+     <% } %>
+     >
     <label for="red">Red</label><br>
-    <input type="radio" id="blue" name="user[color]" value="blue">
+    <input type="radio" id="blue" name="user[color]" value="blue"
+    <% if (kleur== "blue") { %>
+      checked 
+     <% } %>
+     >
     <label for="blue">Blue</label><br>
-    <input type="radio" id="orange" name="user[color]" value="orange">
+    <input type="radio" id="orange" name="user[color]" value="orange"
+    <% if (kleur== "orange") { %>
+      checked 
+     <% } %>
+     >
     <label for="orange">Orange</label><br>
-    <input type="radio" id="green" name="user[color]" value="green">
+    <input type="radio" id="green" name="user[color]" value="green"
+    <% if (kleur== "green") { %>
+      checked 
+     <% } %>
+    >
     <label for="green">Green</label><br><br>
 
 
@@ -53,7 +79,8 @@
   </svg>
 
 
-  <p> <%=text %> </p>
+ 
+  <p id="shirtText"><%= text%> </p>
   </div>
 </section>
 <a href="/">Home</a>

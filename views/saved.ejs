@@ -5,9 +5,6 @@
 <section>
   <form method="post" action="/edit">
 
-    <label for="text">ID</label>
-    <input type="text" name="user[id]" id="id" value="<%= id %>" maxlength="10" required><br><br>
-
     <label for="text">Text</label>
     <input type="text" name="user[text]" id="text" value="<%= text%>" maxlength="13" required><br>
 
@@ -81,6 +78,12 @@
 
  
   <p id="shirtText"><%= text%> </p>
+  </div>
+  <div class="id">
+    <label for="myId">Your shirt ID:</label>
+    <input type="text" value="<%=id %>" id="myId">
+    <button id="copyIdButton">Copy ID</button>
+    <p><a href=".">Home</a></p>
   </div>
 </section>
 <a href="/">Home</a>

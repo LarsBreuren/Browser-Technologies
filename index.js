@@ -94,9 +94,12 @@ app.post('/edit', function (request, res) {
         }
         let shirt = JSON.parse(data);
         let search_id = request.body.user.id;
-        
         let color = request.body.user.color;
         let text = request.body.user.text;
+        console.log(search_id);
+        console.log(color);
+        console.log(text);
+        
             res.render('saved', {
                 kleur: color,
                 text: text,

@@ -3,7 +3,7 @@ document.getElementById("copyIdButton").addEventListener("click", copyId);
 function copyId() {
     console.log('yellow');
     /* Get the text field */
-    var copyText = document.getElementById("myId");
+    var copyText = document.getElementById("search_id");
   
     /* Select the text field */
     copyText.select();

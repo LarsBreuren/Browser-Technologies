@@ -41,15 +41,17 @@ app.use(express.json());
 app.post('/', function(request, res){
     let color = request.body.user.color;
     let text = request.body.user.text;
+    let textColor = request.body.text.color;
     let search_id = uniqid();
 
     res.render('saved', {
         kleur: color,
         text: text,
+        textColor: textColor,
         id: search_id,
     });    
 
-    let object = {color: request.body.user.color, text: request.body.user.text };
+    let object = {color: request.body.user.color, text: request.body.user.text, textColor: request.body.text.color };
 
     fs.readFile('shirts/shirts.json', function (err, data) { // read to edit
         let shirts = JSON.parse(data);
@@ -71,12 +73,14 @@ app.post('/read', function (request, res) {
 		
 		let color = shirts[search_id].color
         let text = shirts[search_id].text
+        let textColor = shirts[search_id].textColor
 
         if(shirts.hasOwnProperty(search_id)){
 			console.log("Shirt bestaat!");
 			res.render('saved', {
 				kleur: color,
                 text: text,
+                textColor: textColor,
                 id: search_id,
 			});   
 	
@@ -96,17 +100,17 @@ app.post('/edit', function (request, res) {
         let search_id = request.body.user.id;
         let color = request.body.user.color;
         let text = request.body.user.text;
-        console.log(search_id);
-        console.log(color);
-        console.log(text);
+        let textColor = request.body.text.color;
         
             res.render('saved', {
                 kleur: color,
                 text: text,
+                textColor: textColor,
                 id: search_id,
             });   
            shirt[search_id]["color"] = color;
            shirt[search_id]["text"] = text;
+           shirt[search_id]["textColor"] = textColor;
     
            fs.writeFile('shirts/shirts.json', JSON.stringify(shirt)); // write to json
 

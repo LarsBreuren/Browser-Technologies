@@ -1,0 +1,62 @@
+
+<fieldset>
+  <legend>Your ID:</legend>
+    <input type="text" value="<%=id %>" name ="user[id]" id="search_id">
+    <button id="copyIdButton">Copy ID</button><br><br>
+  </fieldset>
+    <fieldset>
+      <legend>Shirt text</legend>
+    <label for="text">Text</label>
+    <input type="text" name="user[text]" id="text" value="<%= text%>" maxlength="13" required><br>
+  </fieldset>
+  <fieldset>
+      <legend>Color</legend>
+    <p> Color:</p>
+    <input type="radio" id="purple" name="user[color]" value="purple"
+    <% if (kleur== "purple") { %>
+      checked 
+     <% } %>
+     >
+    <label for="purple">Purple</label><br>
+    <input type="radio" id="red" name="user[color]" value="red"   
+    <% if (kleur== "red") { %>
+      checked 
+     <% } %>
+     >
+    <label for="red">Red</label><br>
+    <input type="radio" id="blue" name="user[color]" value="blue"
+    <% if (kleur== "blue") { %>
+      checked 
+     <% } %>
+     >
+    <label for="blue">Blue</label><br>
+    <input type="radio" id="orange" name="user[color]" value="orange"
+    <% if (kleur== "orange") { %>
+      checked 
+     <% } %>
+     >
+    <label for="orange">Orange</label><br>
+    <input type="radio" id="green" name="user[color]" value="green"
+    <% if (kleur== "green") { %>
+      checked 
+     <% } %>
+    >
+    <label for="green">Green</label><br><br>
+
+  </fieldset>
+  <fieldset>
+      <legend>Text color</legend>
+      <input type="radio" id="white" name="text[color]" value="white" 
+      <% if (textColor== "white") { %>
+        checked 
+       <% } %>
+      >
+      <label for="white">White</label><br>
+      <input type="radio" id="black" name="text[color]" value="black"
+      <% if (textColor== "black") { %>
+        checked 
+       <% } %>
+      >
+      <label for="black">Black</label><br><br>
+  </fieldset>
+    <input class="button" type="submit" value="Edit shirt">

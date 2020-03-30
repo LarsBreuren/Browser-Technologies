@@ -1,51 +1,10 @@
 <%- include('partials/head') %>
-
+<%- include('partials/navBar') %>
 
 <h1> Edit your <%=kleur %> T-shirt! </h1>
 <section>
   <form method="post" action="/edit">
-
-    <label for="myId">Your shirt ID:</label><br>
-    <input type="text" value="<%=id %>" name ="user[id]" id="search_id">
-    <button id="copyIdButton">Copy ID</button><br><br>
-
-    <label for="text">Text</label>
-    <input type="text" name="user[text]" id="text" value="<%= text%>" maxlength="13" required><br>
-
-    <p> Color:</p>
-    <input type="radio" id="purple" name="user[color]" value="purple"
-    <% if (kleur== "purple") { %>
-      checked 
-     <% } %>
-     >
-    <label for="purple">Purple</label><br>
-    <input type="radio" id="red" name="user[color]" value="red"   
-    <% if (kleur== "red") { %>
-      checked 
-     <% } %>
-     >
-    <label for="red">Red</label><br>
-    <input type="radio" id="blue" name="user[color]" value="blue"
-    <% if (kleur== "blue") { %>
-      checked 
-     <% } %>
-     >
-    <label for="blue">Blue</label><br>
-    <input type="radio" id="orange" name="user[color]" value="orange"
-    <% if (kleur== "orange") { %>
-      checked 
-     <% } %>
-     >
-    <label for="orange">Orange</label><br>
-    <input type="radio" id="green" name="user[color]" value="green"
-    <% if (kleur== "green") { %>
-      checked 
-     <% } %>
-    >
-    <label for="green">Green</label><br><br>
-
-
-    <input type="submit" value="Submit">
+    <%- include('partials/formSaved') %>
   </form>
  <div class="svg">
      <!-- <svg width="300" height="300" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +40,7 @@
 
 
  
-  <p id="shirtText"><%= text%> </p>
+  <p id="shirtText" style="color: <%= textColor%> "><%= text%> </p>
   </div>
   
 

@@ -16,8 +16,7 @@ section{
     width: 90%;
     margin: auto;
     }
-/* form{ width: 30%; }
-.svg{ width: 70%; } */
+
 
 form{ color: #fff;}
 input#text {
@@ -30,7 +29,11 @@ input#text {
 fieldset {
     border: none;
     border-bottom: 2px solid #445D6B;
-    margin: 15px 0;
+    margin: 15px 0
+    ;
+}
+legend {
+    color: #fff;
 }
 .button{
     font-family:'Roboto', sans-serif;
@@ -87,4 +90,29 @@ a{ color: #fff;}
 .right {
     display: flex;
     justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+ 
+}
+
+@media only screen and (max-width: 600px) {
+    .left, .right{ width: 100%;}
+    form{ width: 100%; }
+    .svg{ width: 100%; }
+    section, .navigation {
+        flex-wrap: wrap;
+    }
+    .navigation{
+        justify-content: center;
+    }
 }

@@ -57,6 +57,12 @@
         checked 
        <% } %>
       >
-      <label for="black">Black</label><br><br>
+      <label for="black">Black</label><br>
+      <input type="radio" id="pink" name="text[color]" value="pink"
+      <% if (textColor== "pink") { %>
+        checked 
+       <% } %>
+      >
+      <label for="pink">Pink</label><br><br>
   </fieldset>
     <input class="button" type="submit" value="Edit shirt">

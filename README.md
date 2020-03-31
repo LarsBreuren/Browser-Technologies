@@ -85,7 +85,9 @@ Not game breaking and it's only on IE11 and it's still responsive so i think it'
 ## accessibility
 I've tested the website on the main browsers (for wich ones look to the paragraph above) and the website works with both keyboard and mouse or just a keyboard. If i were to implement the drag and drop function to color the shirt i had to come up with a fallback for the keyboard. But at the moment everything works fine as it is. The taggs are used correctly and so the user can just use the keyboards command to edit the shirt, all the functions are available.
 
-
+# Conclusion
+I knew you had to keep in mind that certain browsers are a little odd when it comes to supporting new features but i've learned quite some new features. I had no idea feature detection was a thing, very cool if you use advanched features like geolocation.
+I was also suprised that IE11 supported flexbox but not some of it's properties, not gamebreaking but your layout looks diffrent than in other browsers. Overal a cool experience to learn about diffrent browsers and how to work. I thinks it's quite valuable to know about those features.
 
 
 

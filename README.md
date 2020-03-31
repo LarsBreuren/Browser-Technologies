@@ -75,10 +75,8 @@ But the wierd thing is that IE11 supports flexbox but not certain properties of 
 
 Not game breaking and it's only on IE11 and it's still responsive so i think it's fine.
 
-
- 
-
-
+## accessibility
+I've tested the website on the main browsers (for wich ones look to the paragraph above) and the website works with both keyboard and mouse or just a keyboard. If i were to implement the drag and drop function to color the shirt i had to come up with a fallback for the keyboard. But at the moment everything works fine as it is. The taggs are used correctly and so the user can just use the keyboards command to edit the shirt, all the functions are available.
 
 
 een beschrijving van de feature(s)/Browser Technologies

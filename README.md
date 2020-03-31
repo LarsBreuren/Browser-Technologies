@@ -49,7 +49,7 @@ The second sketch. Some more options and an improved layout. used a header to ma
 In this wireflow there are some layers are in terms of functional/usable and pleasurable.
 - The usabel layer is just the basics, giving the shirt a funny text and a background and text color. This works on the current browsers starting from IE11. There is also no JS involved since everything is server side rendered. Saving and requesting a shirt works as well.
 - The usable layer i improved with live updating. this means when you pick a color or type a text, the shirt on the right will allready show you what it's going to look like. This is live, so typing something immediately changes the shirt. Another thing that i did was when you request a saved shirt, the form is filled in as the way you left it. So the colors and text you choose are ready for editing. This only works when JS is enabled however the website won't break if you can't run JS.
--The pleasurable layer is still under construction, i had 2 things in mind. One is a drag and drop for colors or logo's on the shirt. To make it more natural instead of having a form. The other was when you hit the create shirt button the page of editing would fly in instead of a normal page load. Still haven't figured out how to do that with server side. 
+- The pleasurable layer is still under construction, i had 2 things in mind. One is a drag and drop for colors or logo's on the shirt. To make it more natural instead of having a form. The other was when you hit the create shirt button the page of editing would fly in instead of a normal page load. Still haven't figured out how to do that with server side. 
 
 ![wireflow](https://user-images.githubusercontent.com/43336468/78012741-b8e25600-7345-11ea-942b-957eef59e26b.jpg)
 

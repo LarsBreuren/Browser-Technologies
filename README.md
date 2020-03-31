@@ -54,6 +54,19 @@ In this wireflow there are some layers are in terms of functional/usable and ple
 ![wireflow](https://user-images.githubusercontent.com/43336468/78012741-b8e25600-7345-11ea-942b-957eef59e26b.jpg)
 
 
+## Testing | Browser technologies & accessibility
+
+## Testing the progressive enhancement
+The website works without JS & CSS, looks terrible but it works. The core functionalities like editing and requesting an existing shirt are fine. This is what it looks with with no JS & CSS: 
+![NojsCss](https://user-images.githubusercontent.com/43336468/78014769-b59c9980-7348-11ea-9a9b-5e7cf4ae7d4b.png)
+The only thing that is a bit off is the shirt text not standing in the shirt but beneath is because there is no CSS, thats it.
+Also since there is no client side JS the live updating is not working but not breaking the website.
+
+een beschrijving van de feature(s)/Browser Technologies
+welke browser de feature(s) wel/niet ondersteunen
+een beschrijving van de accessibility issues die zijn onderzocht
+
+
 
 
 

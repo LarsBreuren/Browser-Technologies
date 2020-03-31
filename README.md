@@ -86,13 +86,14 @@ Not game breaking and it's only on IE11 and it's still responsive so i think it'
 I've tested the website on the main browsers (for wich ones look to the paragraph above) and the website works with both keyboard and mouse or just a keyboard. If i were to implement the drag and drop function to color the shirt i had to come up with a fallback for the keyboard. But at the moment everything works fine as it is. The taggs are used correctly and so the user can just use the keyboards command to edit the shirt, all the functions are available.
 
 The website runs just fine on all kinds of devices, the core functions have been tested on:
-- Samsung s9+ running android 10 with the chrome 80 browser.
-- Ipad mini 4 running IOS 12.31 with Safari 12.1.1
-- Lenovo y540 laptop running Firefox 74.0 on windows 10.
-- Lenovo y540 laptop running IE11.0 on windows 10.
-- Lenovo y540 laptop running Chrome 80 on windows 10.
-- Lenovo y540 laptop running Edge 18 on windows 10.
-- Lenovo y540 laptop running Opera 67.0 on windows 10.
+- Samsung galaxy s9+ running Chrome 80 on Android 10.
+- Samsung galaxy s5 running Samsung internet 10.1 on Android 6.0.1.
+- Ipad mini 4 running Safari 12.1.1 on IOS 12.31.
+- Lenovo y540 laptop running Firefox 74.0 on Windows 10.
+- Lenovo y540 laptop running IE11.0 on Windows 10.
+- Lenovo y540 laptop running Chrome 80 on Windows 10.
+- Lenovo y540 laptop running Edge 18 on Windows 10.
+- Lenovo y540 laptop running Opera 67.0 on Windows 10.
 
 If you want to you can print your shirt and the details about it, this works with JS. With CSS i used the @media print to hide some navigation and buttons to make the print look better. This is how it looks:
 ![printing](https://user-images.githubusercontent.com/43336468/78027950-855ff580-735e-11ea-80fb-ac81e7dfc22d.png)

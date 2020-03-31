@@ -1,34 +1,9 @@
-# Browser-Technologies
-My accessible website
-
-## Case 2 - Shirts designen
-
-## Feedback
-- Opbouw code, goed? Kan het beter?
-- Flexbox werkt op IE, goede keuze?
-- In de json files staan nu id objects die data over een shirt bevatten. Ik ben er nog niet helemaal achter hoe ik dit weer kan ophalen via
-een formulier. Wellicht een suggestie hiervoor? -- Dit is nu gefixed, wellicht feedback op hoe dit opgelost is ( in shirts.json opgeslagen).
-
-## Opbouw code
-Ik heb NodeJS en EJS gebruikt.
-Je land op de edit pagina, hier kan je met een formulier data versturen om het shirt aan de rechterzijde te bewerken.
-Zodra je op submit klikt gaat de data naar de server, die zet de waardes in een nieuwe EJS file die vervolgens server side gerenderd wordt.
-Ook wordt deze data doormiddel van de npm package file system naar een .json file geschreven om later weer gebruikt te worden.
-De id's worden met uniqid gemaakt, zo kunnen er geen dubbele shirts onstaan.
-
-
-## To install
-1. Clone repository
-2. open terminal on master folder
-3. Give the command `npm start`
-4. Navigate to localhost:3000
-
-
-## Opdracht 1.2 Browser technologies
-Geteste features per device:
-- Zoeken op 2 titels
-- Verwijderen boeken
-- Details boeken bekijken
+# Opdracht 1.2 Browser technologies
+Tested my project website from OBA -> https://github.com/LarsBreuren/ObA-project-week-1
+Tested features:
+- Searching for 2 titles
+- Remove books
+- Check details of a book
 
 
 ### Nexus 5 - android 6.0.1 chrome 75
@@ -46,8 +21,24 @@ Fetch does not work, so interaction is not possible. Layout does load and so doe
 ### Screenreader
 The website is not optimized for a screen reader because it can't read the book titles. Inside the a tag there is a h2 tag that contains the title. An easy fix would be to insert the title into the a directly. Adding an alt text to the book cover images would help as well.
 
-## Opdracht 2
-Case 2 - T-shirt ontwerpen
+
+# Opdracht 2 Use case 2 | Shirts ontwerpen
+The user wants to create a T-shirt with his/hers (most likely) funny texts. Next to just text maybe some color or other design options to make the T-shirt more personal. There has to be an option to save the T-shirt so that the user can come back later and continiu their work. When the work is done the user wants to print his/hers T-shirt for further use.
+
+## The code
+I used NodeJS and EJS for this case.
+At the homepage there will be a form with some options you can choose, with that given input the website wil generate a cool looking T-shirt for you! After hitting submit the shirt is saved to the server with a unique ID so you can later on continiu working on it. The saving is done with the npm package file system to read and write to .json files.
+
+
+## To install
+1. Clone repository
+2. open terminal on master folder
+3. Run `npm install`
+4. Give the command `npm start`
+5. Navigate to localhost:3000
+
+
+
 
 ### Eerste schets
 

@@ -41,7 +41,13 @@ At the homepage there will be a form with some options you can choose, with that
 
 
 
-### Eerste schets
-
+## Sketches
+This is the first sketch, basic functions are there but the layout is quite basic.
 ![18-03-2020-11 50 03](https://user-images.githubusercontent.com/43336468/76953364-e0c9c680-690e-11ea-9392-df6b7143f6cb.jpg)
+
+The second sketch. Some more options and an improved layout. used a header to make navigating a little easier when you switch pages.
+![31-03-2020-11 32 59](https://user-images.githubusercontent.com/43336468/78011259-a1a26900-7343-11ea-8bda-8c678aa2ba17.jpg)
+
+
+
 

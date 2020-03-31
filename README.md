@@ -1,3 +1,10 @@
+## Table of contents use case
+- [Code](#the-code)
+- [Sketches](#sketches)
+- [Testing PWA](#testing-the-progressive-enhancement)
+- [Accessibility](#accessibility)
+- [Conclusion](#conclusion)
+
 # Opdracht 1.2 Browser technologies
 Tested my project website from OBA -> https://github.com/LarsBreuren/ObA-project-week-1
 

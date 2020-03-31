@@ -68,6 +68,15 @@ Now if we turn CSS on this is what we get:
 Looks better, but no diffrence in functionalities. However way more usable.
 If we were to turn on JS everything we edit in the form directly changes the shirt on the right. And in my opinion makes the app way more usable. But with or without JS the outcome stays the same.
 
+The taggs and css used is supported by all the current browsers (IE11, edge 80, chrome 80, safari 13, firefox, 74. opera 66, sasmung internet 11.1).
+I didnt have to use feature detection for the things i needed so i just looked up a tag on caniuse.com if i noticed a browser acted wierd using that tag. Since flexbox is supported in IE11 i didnt have to make a fallback with float or anything. If i were to use CSS grid that would've been required.
+But the wierd thing is that IE11 supports flexbox but not certain properties of flexbox. For example `justify-content: space-evenly` doesn't work. I use that to nicely align my form and shirt so in IE11 it doesn't do that. This is how it looks:
+![Screenshot_1](https://user-images.githubusercontent.com/43336468/78016519-378dc200-734b-11ea-952e-643458f79a80.png)
+
+Not game breaking and it's only on IE11 and it's still responsive so i think it's fine.
+
+
+ 
 
 
 

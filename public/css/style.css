@@ -18,6 +18,9 @@ section{
     margin: auto;
     }
 
+section .button{
+    margin-top: 0;
+    }
 
 form{ color: #fff;}
 input#text {
@@ -45,6 +48,7 @@ legend {
     padding: .3em;
     transition: 300ms;
     border: 2px solid #000;
+    margin-top: 5px;
 }
 .button:hover{
     background-color: #000;

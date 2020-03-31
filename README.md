@@ -59,8 +59,18 @@ In this wireflow there are some layers are in terms of functional/usable and ple
 ## Testing the progressive enhancement
 The website works without JS & CSS, looks terrible but it works. The core functionalities like editing and requesting an existing shirt are fine. This is what it looks with with no JS & CSS: 
 ![NojsCss](https://user-images.githubusercontent.com/43336468/78014769-b59c9980-7348-11ea-9a9b-5e7cf4ae7d4b.png)
-The only thing that is a bit off is the shirt text not standing in the shirt but beneath is because there is no CSS, thats it.
+The only thing that is a bit off is the shirt text not standing in the shirt but beneath it because there is no CSS, thats it.
 Also since there is no client side JS the live updating is not working but not breaking the website.
+
+Now if we turn CSS on this is what we get:
+![layout](https://user-images.githubusercontent.com/43336468/78015220-673bca80-7349-11ea-9be3-dde5a2130980.png)
+
+Looks better, but no diffrence in functionalities. However way more usable.
+If we were to turn on JS everything we edit in the form directly changes the shirt on the right. And in my opinion makes the app way more usable. But with or without JS the outcome stays the same.
+
+
+
+
 
 een beschrijving van de feature(s)/Browser Technologies
 welke browser de feature(s) wel/niet ondersteunen

@@ -117,12 +117,36 @@ a{ color: #fff;}
 
 @media only screen and (max-width: 600px) {
     .left, .right{ width: 100%;}
-    form{ width: 100%; }
-    .svg{ width: 100%; }
+    .svg{ width: 100%; margin-top: 30px; }
     section, .navigation {
         flex-wrap: wrap;
+        border: none;
     }
     .navigation{
         justify-content: center;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    .navigation p {
+        font-size: 1em;
+        text-align: center;
+    }
+    .right{
+        flex-wrap: wrap;
+    }
+    form {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navigation form{
+        text-align: center;
+    }
+    .navigation{
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    #Layer_2 {
+        width: 100%;
     }
 }

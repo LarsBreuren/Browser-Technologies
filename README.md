@@ -65,7 +65,7 @@ Also since there is no client side JS the live updating is not working but not b
 Now if we turn CSS on this is what we get:
 ![layout](https://user-images.githubusercontent.com/43336468/78015220-673bca80-7349-11ea-9be3-dde5a2130980.png)
 
-Looks better, but no diffrence in functionalities. However way more usable.
+Looks better, but no difference in functionalities. However way more usable.
 If we were to turn on JS everything we edit in the form directly changes the shirt on the right. And in my opinion makes the app way more usable. But with or without JS the outcome stays the same.
 
 The taggs and css used is supported by all the current browsers (IE11, edge 80, chrome 80, safari 13, firefox, 74. opera 66, sasmung internet 11.1).

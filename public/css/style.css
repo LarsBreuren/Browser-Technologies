@@ -80,6 +80,7 @@ a{ color: #fff;}
     justify-content: space-evenly;
     margin-bottom: 30px;
     padding: 1em;
+    box-sizing: border-box;
 }
 .navigation p{
     margin: 0;
